@@ -1,12 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alquiler de bicicletas eléctricas</title>
+  <!-- Enlaces a las hojas de estilo de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE2XmK/hLJoUddI21U6KvU" crossorigin="anonymous">
+  <!-- Personalizaciones de estilos CSS -->
+  <style>
+    body {
+      background-color: #f7f7f7;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #f8f9fa !important;
+    }
+    .jumbotron {
+      background-color: #6c757d;
+      color: #f8f9fa;
+    }
+    .card {
+      background-color: #f8f9fa;
+    }
+  </style>
 </head>
 <body>
-    <h1>Escribe grhnmjys</h1>
-</body>
-</html>
+  <!-- Encabezado -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Alquiler de bicicletas eléctricas</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Iniciar sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección de información -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">¡Alquila una bicicleta eléctrica hoy mismo!</h1>
+      <p class="lead">Disfruta de la ciudad sin emisiones contaminantes ni esfuerzo físico.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Regístrate</a>
+    </div>
+  </div>
+
+  <!-- Sección de características -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Bicicletas eléctricas</h5>
+            <p class="card-text">Nuestras bicicletas tienen un motor eléctrico que te ayuda a pedalear sin esfuerzo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Estaciones en toda la ciudad</h5>
+            <p class="card-text">Tenemos estaciones de bicicletas eléctricas en puntos estratégicos de la ciudad, así que siempre habrá una cerca de ti.</p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="card mb-4">
+        <div class="card-body">
+        <h5 class="card-title">Reserva en línea</h5>
+        <p class="card-text">Reserva una bicicleta en línea y recógela en la estación de tu elección.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+          </div>
+          <!-- Sección de reserva -->
+          <div class="container">
+            <h2>Reservar una bicicleta</h2>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Selecciona una fecha y hora</h4>
+                <input type="date" name="fecha">
+                <input type="time" name="hora">
+              </div>
+              <div class="col-md-6">
+                <h4>Selecciona una estación</h4>
+                <select name="estacion">
+                  <option value="1">Estación 1</option>
+                  <option value="2">Estación 2</option>
+                  <option value="3">Estación 3</option>
+                </select>
+              </div>
+            </div>
+            <br>
+            <button class="btn btn-primary">Reservar</button>
+          </div>
+          <!-- Pie de página -->
+          <footer class="bg-dark text-center text-white py-3">
+            © 2023 Alquiler de bicicletas eléctricas
+          </footer>
+          <!-- Enlaces a los scripts de Bootstrap -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-RcOXZFXMbd5F5MwneLJyILiLix9h+hJmC/GgZvYbWmPx8DEdNDLgDYeBSyvF2WXB" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE2XmK/hLJoUddI21U6KvU" crossorigin="anonymous"></script>
+        </body>
+        </html>
